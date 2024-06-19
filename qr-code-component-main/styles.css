@@ -11,6 +11,8 @@
 
 * {
   font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -21,10 +23,10 @@ body {
 }
 
 .card {
-  margin-top: 5%;
-  height: 400px;
-  width: 250px;
+  margin-top: 5em;
   background-color: white;
+  min-width: 30em;
+  max-width: 20%;
   border-radius: 15px;
   padding: 10px;
   overflow: hidden;
@@ -37,6 +39,10 @@ body {
 
 .text-container {
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 h2 {
@@ -46,4 +52,17 @@ h2 {
 p {
   font-size: 15px;
   font-weight: 400;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    margin-top: 10em;
+    min-width: 90%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .text-container {
+  }
 }
